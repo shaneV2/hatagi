@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/src/css/homepage.css">
+    <link rel="stylesheet" href="./public/src/css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="post">
+        <section class="post-section">
+            <div class="profile-section">
+                <div class="profile">
+                    <div class="picture">
+                        <img src="./public/src/assets/person.svg" alt=""> 
+                    </div>
+                    <div class="person-info">
+                        <p>@admin</p>
+                        <p class="person-title">#tester</p>
+                    </div>
+                    <p style="color: #00BFA6">follow</p>
+                </div>
+                <div class="post-options">
+                    <div><button onclick="viewEditPost('. $row['post_id'] .')"><img class="edit-post-icon" src="./public/src/assets/edit.svg" width="20" height="20" alt=""></button></div>
+                    <div><a href="./queries.php?action=delete-post&post_id='. $row['post_id'] .'"><img class="delete-post-icon" src="./public/src/assets/delete.svg" width="20" height="20" alt=""></a></div>
+                </div>
+            </div>
+            <div class="idea-section">
+                <p><span>Description</span>: <p class="description-text"></p></p>
+                <p><span>--List--</span></p>
+                <div class="ideas-list">
+                </div>
+            </div>
+            <div class="engagement-section">
+                <div><img src="./public/src/assets/check.svg" width="20" height="20" alt=""></div>
+                <div><img src="./public/src/assets/bulb.svg" width="20" height="20" alt=""></div>
+                <div><img src="./public/src/assets/show-suggestions.svg" width="20" height="20" alt=""></div>
+            </div>
+        </section>
+        <div class="interaction-section">
+            <div class="suggestions-section">
+                <div class="suggestion">
+                    <p>I think you have to add a homepage.</p>
+                    <div><a href="#"><img src="./public/src/assets/add.svg" width="20" height="20" alt=""></a></div>
+                </div>
+                <div class="suggestion">
+                    <p>Add a hero section. Really cool.</p>
+                    <div><a href="#"><img src="./public/src/assets/add.svg" width="20" height="20" alt=""></a></div>
+                </div>
+                <div class="suggestion">
+                    <p>I think you have to add a homepage.</p>
+                    <div><a href="#"><img src="./public/src/assets/add.svg" width="20" height="20" alt=""></a></div>
+                </div>
+            </div>
+            <div>
+                <form action="#">
+                    <input type="text" placeholder="Add new suggestion">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
