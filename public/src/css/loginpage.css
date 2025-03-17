@@ -1,12 +1,15 @@
 main {
-    min-width: 312px;
-    max-width: 500px; 
-    padding: 40px;
-    margin: auto;
+    min-width: 390px;
+    width: 100%;
+    display: grid;
+    height: 100vh; 
 }
 
 .login-section {
+    width: 90%;
+    max-width: 500px;
     display: grid;
+    margin: auto;
     grid-template-rows: 2;
     gap: 20px;
     grid-auto-flow: row;
@@ -47,10 +50,11 @@ section {
 .input-fields {
     display: grid;
     gap: 1.5rem;
-    width: 100%;
 }
 
 .input-fields input, .login-btn {
+    width: 100%;
+    box-sizing: border-box;
     padding: 13px 20px;
     font-size: 18px;
     border-radius: 5px;

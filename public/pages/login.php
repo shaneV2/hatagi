@@ -40,10 +40,10 @@
                         </p>
                         <!-- EMAIL INPUT FIELD -->
                         <input 
-                            type="email" 
+                            type="text" 
                             placeholder="Email" 
                             name="email"
-                            value="admin6@gmail.com"
+                            value="admin.test@gmail.com"
                             autofocus
                             <?php 
                                 if(isset($_SESSION['OLD_DATA'])){ 

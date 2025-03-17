@@ -19,25 +19,25 @@
     <link rel="stylesheet" href="../src/css/homepage.css">
 </head>
 <body>
-    <main>
-        <div class="modal">
-            <div class="modal-section">
-                <header>
-                    <h2>Share Idea</h2>
-                    <button class="close-btn" onclick="closeCreatePost()">X</button>
-                </header>
-                <div>
-                    <form action="./queries.php?action=create-post" method="post">
-                        <input type="text" class="post-description" placeholder="Description" name="description" required>
-                        <textarea 
-                            name="post-list" id="post-idea"
-                            placeholder="Create a list, separated by commas (,)"
-                        ></textarea>
-                        <input type="submit" name="submit" id="submit-btn" value="Post">
-                    </form>
-                </div>
+    <div class="modal">
+        <div class="modal-section">
+            <header>
+                <h2>Share Idea</h2>
+                <button class="close-btn" onclick="closeCreatePost()">X</button>
+            </header>
+            <div>
+                <form action="./queries.php?action=create-post" method="post">
+                    <input type="text" class="post-description" placeholder="Description" name="description" required>
+                    <textarea 
+                        name="post-list" id="post-idea"
+                        placeholder="Create a list, separated by commas (,)"
+                    ></textarea>
+                    <input type="submit" name="submit" id="submit-btn" value="Post">
+                </form>
             </div>
         </div>
+    </div>
+    <main>
         <!-- Edit modal -->
         <div class="modal">
             <div class="modal-section">
