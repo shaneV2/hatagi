@@ -61,8 +61,7 @@
                 </div>
             </header>
         </div>
-        <div class="content">
-        </div>
+        <div class="content"></div>
     </main>
     <script src="../src/js/create-post.js"></script>
     <script src="../src/js/edit-post.js"></script>
