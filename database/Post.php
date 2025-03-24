@@ -168,21 +168,8 @@
                             <div><button post-number="'. $row['post_id'] .'"><img src="../src/assets/bulb.svg" width="20" height="20" alt=""></button></div>
                         </div>
                         </section>
-                        <div class="interaction-section post-number-'. $row['post_id'] .'">
-                            <div class="suggestions-section">';
-                            // Get all the comments
-                            $comment->getComments($row['post_id'], $row['user_id']);
-                            echo'
-                            </div>
-                            <div class="comment_input">
-                                <form action="./queries.php?action=create-comment&post_id='. $row['post_id'] .'" method="post">
-                                    <input type="text" placeholder="Add new suggestion" name="comment_text" autofocus>
-                                </form>
-                            </div>
-                        </div>
                     <div>';
             }
-            
             mysqli_stmt_close($stmt);
         }
     }

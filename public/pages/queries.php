@@ -67,6 +67,9 @@
                 header("Location: ./home.php");
                 exit;
 
+            case 'get-comments':
+                return $comment->getComments($_GET['post_id'], $_GET['u_id']);
+
             case 'delete-comment-from-post':
                 $comment_id = $_GET['comment_id'] ?? null;
                 $comment->deleteCommentFromPost($comment_id);

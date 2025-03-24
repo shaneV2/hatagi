@@ -43,6 +43,10 @@
             <div class="modal-section">
             </div>
         </div>
+        <div class="comment-modal">
+            <div class="comment-modal-section">
+            </div>
+        </div>
         <div class="navigation-bar">
             <header>
                 <p class="appname" style="font-weight: 600; letter-spacing: 1.2px;">HATAGI<span style="color: #00BFA6">.</span></p>
@@ -61,7 +65,13 @@
                 </div>
             </header>
         </div>
-        <div class="content"></div>
+        <div class="content">
+            <?php 
+                require '../../database/Post.php';
+                $post = new Post(); 
+                $post->getPost();
+            ?>
+        </div>
     </main>
     <script src="../src/js/create-post.js"></script>
     <script src="../src/js/edit-post.js"></script>
