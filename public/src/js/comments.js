@@ -12,15 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 const res = await fetch("../../public/pages/queries.php?action=get-comments&post_id=" + post_id+ "&u_id=2");
                 const data = await res.text()
                 
-                // 
-                const form = '<div class="comment_input"><form action="./queries.php?action=create-comment&post_id=' + post_id + '" method="post"><input type="text" placeholder="Add new suggestion" name="comment_text"></form></div>';
+                // // 
+                // const form = '<div class="comment_input"><form action="./queries.php?action=create-comment&post_id=' + post_id + '" method="post"><input type="text" placeholder="Add new suggestion" name="comment_text"></form></div>';
 
-                comment_modal_section.innerHTML = data + form;
+                comment_modal_section.innerHTML;
             }
 
             getComments();
 
-        }else {
+        }
+        else {
             comment_modal_main.style.display = "none"
         }
     }

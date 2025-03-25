@@ -44,7 +44,159 @@
             </div>
         </div>
         <div class="comment-modal">
+            <div class="comment-modal-background">
+            </div>
             <div class="comment-modal-section">
+                <h2>Comments</h2>
+                <div class="user-comments-section">
+                    <div>
+                        <p>This is the comment from user...</p>
+                        <div>
+                            <button>
+                                <img src="../src/assets/add.svg" width="100%" height="100%" alt="">
+                            </button>
+                            <button>
+                                <img src="../src/assets/delete.svg" width="100%" height="100%" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>This is the comment from user...</p>
+                        <div>
+                            <button>
+                                <img src="../src/assets/add.svg" width="100%" height="100%" alt="">
+                            </button>
+                            <button>
+                                <img src="../src/assets/delete.svg" width="100%" height="100%" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>This is the comment from user...</p>
+                        <div>
+                            <button>
+                                <img src="../src/assets/add.svg" width="100%" height="100%" alt="">
+                            </button>
+                            <button>
+                                <img src="../src/assets/delete.svg" width="100%" height="100%" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>This is the comment from user...</p>
+                        <div>
+                            <button>
+                                <img src="../src/assets/add.svg" width="100%" height="100%" alt="">
+                            </button>
+                            <button>
+                                <img src="../src/assets/delete.svg" width="100%" height="100%" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>This is the comment from user...</p>
+                        <div>
+                            <button>
+                                <img src="../src/assets/add.svg" width="100%" height="100%" alt="">
+                            </button>
+                            <button>
+                                <img src="../src/assets/delete.svg" width="100%" height="100%" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>This is the comment from user...</p>
+                        <div>
+                            <button>
+                                <img src="../src/assets/add.svg" width="100%" height="100%" alt="">
+                            </button>
+                            <button>
+                                <img src="../src/assets/delete.svg" width="100%" height="100%" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>This is the comment from user...</p>
+                        <div>
+                            <button>
+                                <img src="../src/assets/add.svg" width="100%" height="100%" alt="">
+                            </button>
+                            <button>
+                                <img src="../src/assets/delete.svg" width="100%" height="100%" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>This is the comment from user...</p>
+                        <div>
+                            <button>
+                                <img src="../src/assets/add.svg" width="100%" height="100%" alt="">
+                            </button>
+                            <button>
+                                <img src="../src/assets/delete.svg" width="100%" height="100%" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>This is the comment from user...</p>
+                        <div>
+                            <button>
+                                <img src="../src/assets/add.svg" width="100%" height="100%" alt="">
+                            </button>
+                            <button>
+                                <img src="../src/assets/delete.svg" width="100%" height="100%" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>This is the comment from user...</p>
+                        <div>
+                            <button>
+                                <img src="../src/assets/add.svg" width="100%" height="100%" alt="">
+                            </button>
+                            <button>
+                                <img src="../src/assets/delete.svg" width="100%" height="100%" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>This is the comment from user...</p>
+                        <div>
+                            <button>
+                                <img src="../src/assets/add.svg" width="100%" height="100%" alt="">
+                            </button>
+                            <button>
+                                <img src="../src/assets/delete.svg" width="100%" height="100%" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>This is the comment from user...</p>
+                        <div>
+                            <button>
+                                <img src="../src/assets/add.svg" width="100%" height="100%" alt="">
+                            </button>
+                            <button>
+                                <img src="../src/assets/delete.svg" width="100%" height="100%" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>This is the comment from user...</p>
+                        <div>
+                            <button>
+                                <img src="../src/assets/add.svg" width="100%" height="100%" alt="">
+                            </button>
+                            <button>
+                                <img src="../src/assets/delete.svg" width="100%" height="100%" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment_input">
+                    <input type="text" placeholder="Add new suggestion" name="comment_text">
+                    <button>Send</button>
+                </div>
             </div>
         </div>
         <div class="navigation-bar">
@@ -75,6 +227,6 @@
     </main>
     <script src="../src/js/create-post.js"></script>
     <script src="../src/js/edit-post.js"></script>
-    <script src="../src/js/get-post.js"></script>
+    <script src="../src/js/comments.js"></script>
 </body>
 </html>
