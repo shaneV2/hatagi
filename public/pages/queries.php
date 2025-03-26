@@ -68,7 +68,7 @@
                 exit;
 
             case 'get-comments':
-                return $comment->getComments($_GET['post_id'], $_GET['u_id']);
+                return $comment->getComments($_GET['post_id']);
 
             case 'delete-comment-from-post':
                 $comment_id = $_GET['comment_id'] ?? null;
