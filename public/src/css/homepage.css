@@ -354,9 +354,14 @@ nav {
     border-radius: 5px;
 }
 
-.user-comments-section > div:not(:first-child):not(:last-child){
-    margin: 10px 0;
+.user-comments-section > div:not(:last-child){
+    margin: 15px 0;
 }
+
+.user-comments-section > div:first-child {
+    margin-top: 0;
+}
+
 
 .user-comments-section > div,
 .user-comments-section > div > div {
