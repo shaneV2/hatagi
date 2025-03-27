@@ -78,31 +78,21 @@
             $result = mysqli_stmt_get_result($stmt);
             if(mysqli_num_rows($result) != 0){
                 while($row = mysqli_fetch_assoc($result)){
-                    // echo '
-                    //     <div class="suggestion">
-                    //         <p>'. $row['comment_text'] .'</p>';
-                    //         if($_SESSION['userId'] == $user_id){
-                    //             echo '<div><a href="./queries.php?action=add-comment-to-post&post_id='. $row['post_id'] .'&comment_text='. $row['comment_text'] .'"><img src="../src/assets/add.svg" width="20" height="20" alt=""></a></div>';
-                    //         }
-                    //         if($_SESSION['userId'] == $row['user_id']){
-                    //             echo '<div><a href="./queries.php?action=delete-comment-from-post&comment_id='. $row['comment_id'] .'"><img style="background-color: #770202;" src="../src/assets/delete.svg" width="20" height="20" alt=""></a></div>';
-                    //         }
-                    // echo '</div>';
                     echo '
-                    <div>
+                    <div class="comment" comment-id="'. $row['comment_id'] .'">
                         <p>'. $row['comment_text'] .'</p>
                             <div>
-                                <button>
+                                <button class="add-btn">
                                     <img src="../src/assets/add.svg" width="100%" height="100%" alt="">
                                 </button>
-                                <button>
+                                <button class="delete-btn">
                                     <img src="../src/assets/delete.svg" width="100%" height="100%" alt="">
                                 </button>
                             </div>
                     </div>';
                 }
             }else{
-                echo "<div style='height: 93%; display: flex; justify-content: center; align-items: center;'><p style='color: gray;'>No suggestions from users yet</p></div>";
+                echo "<div style='height: 92%; display: flex; justify-content: center; align-items: center;'><p style='color: gray;'>No suggestions from users yet</p></div>";
             }
         }
     }
